@@ -16,7 +16,7 @@ function deepestChild(){
   let kids = gn[0].children
   do{
     if(kids.length === 0){
-      return kids[i].innerHTML;
+      break;
     }
     kids = kids[i].children;
     ++i;
