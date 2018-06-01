@@ -12,15 +12,15 @@ function increaseRankBy(n){
 }
 function deepestChild(){
   const gn = document.querySelectorAll("div#grand-node");
-  const i = 0;
-  let kids = gn[i].children
-  let deepestKid = kids[i]
+  const nodeIndex = 0;
+  let kids = gn[nodeIndex].children
+  let deepestKid = kids[nodeIndex]
   do{
     if(kids.length === 0){
       break;
     }
-    deepestKid = kids[i];
-    kids = kids[i].children;
+    deepestKid = kids[nodeIndex];
+    kids = kids[nodeIndex].children;
   }while(kids.length>0);
   return deepestKid;
 }
