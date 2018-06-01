@@ -14,11 +14,11 @@ function deepestChild(){
   const gn = document.querySelectorAll("div#grand-node");
   let i = 0;
   let kids = gn[0].children
-  while(kids.length) {
+  do{
     if(kids.length === 0){
       return kids[i].innerHTML;
     }
     kids = kids[i].children;
     ++i;
-  }
+  }while(kids.length>0);
 }
