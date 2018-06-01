@@ -14,6 +14,7 @@ function deepestChild(){
   const gn = document.querySelectorAll("div#grand-node");
   let i = 0;
   let kids = gn[0].children
+  let deepestKid = gn[0].children[0]
   do{
     if(kids.length === 0){
       break;
