@@ -18,8 +18,8 @@ function deepestChild(){
     if(kids.length === 0){
       break;
     }
+    deepestKid = kids[i];
     kids = kids[i].children;
-    ++i;
   }while(kids.length>0);
-  return kids
+  return deepestKid;
 }
