@@ -21,4 +21,5 @@ function deepestChild(){
     kids = kids[i].children;
     ++i;
   }while(kids.length>0);
+  return kids
 }
